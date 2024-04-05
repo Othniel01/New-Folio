@@ -1,0 +1,1338 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+::selection {
+  background-color: #c0441a;
+  color: #ffffff;
+}
+
+.ResumeMeBtn {
+  border: 1px solid #aaaaaa;
+  padding: 0.4rem;
+  border-radius: 10px;
+}
+
+:root {
+  --primary-color: #111111;
+  --primary-text-color: #777777;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family: "Open Sans", sans-serif;
+  color: var(--primary-text-color);
+  overflow-x: hidden !important;
+  width: 100%;
+}
+.scroll-container {
+  height: 100vh;
+}
+
+.displayMobile {
+  display: none !important;
+}
+
+.navbar > a {
+  font-weight: 500;
+  color: var(--primary-text-color);
+}
+
+.body-contain {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  /* overflow-y: auto; */
+  height: 100vh;
+}
+
+.timeBlinker {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.timeBlinker > div {
+  background-color: #ffc0cb;
+  width: 10px;
+  height: 10px;
+}
+
+.blinkerbox {
+  width: 100px;
+  height: 100px;
+  animation: blink 0.5s infinite alternate; /* Blink animation */
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.navbar {
+  margin-top: 1.3rem;
+  display: flex;
+  font-size: 0.9rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.showcase {
+  width: 100%;
+  height: 840px;
+  font-family: "Oswald", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: -10rem;
+  position: relative;
+}
+
+.showcase .heroTitleFirst > span,
+.showcase .heroTitleSecond > span {
+  font-size: 18rem;
+  font-weight: 500;
+  display: block;
+}
+
+.bottomLeftDesktop,
+.showcase .heroTitleFirst,
+.showcase .heroTitleSecond {
+  display: flex;
+  letter-spacing: -20px;
+  word-break: break-all;
+}
+
+.hero-gap {
+  display: block;
+  height: 35px;
+  width: 300px;
+  background-color: var(--primary-text-color);
+  cursor: text;
+}
+
+.hero-gap:hover {
+  background-color: #aaaaaa;
+}
+
+.heroTextTop {
+  overflow-x: hidden;
+  height: 500px;
+}
+
+.heroTopTitle {
+  width: 100%;
+  /* left: 0;
+  position: absolute; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero_title_bottom > .bottomLeftDesktop {
+  display: flex;
+}
+
+.heroTitleBottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottomLeftDesktop > span {
+  font-size: 17rem;
+  font-weight: 500;
+  display: block;
+}
+
+.bottomLeftDesktop {
+  transform: translateY(-120px);
+}
+
+.aboutText > p {
+  font-family: "Open Sans", sans-serif;
+}
+
+.aboutText {
+  width: 330px;
+  font-size: 1.06rem;
+  color: #aaaaaa;
+}
+
+.firstWord {
+  font-size: 0.8rem;
+  color: var(--primary-text-color);
+}
+
+.rotateSphere {
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+}
+
+.projectSection {
+  width: 100%;
+}
+
+.straightLine {
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-text-color);
+}
+
+.projectLabel {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1.9rem;
+}
+
+.projectLabel > div {
+  display: flex;
+  align-items: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+  width: 70%;
+  justify-content: space-between;
+}
+
+.homeProjectsTitleText {
+  font-weight: 500;
+  font-family: "Oswald", sans-serif;
+  transition: all 0.2s ease-in-out;
+}
+
+.homeProjectsTitleText:hover {
+  color: #c0441a;
+}
+
+.hero__hover {
+  transition: all 0.2s ease-in-out;
+}
+
+.hero__hover:hover {
+  color: #aaaaaa;
+}
+
+.homeProjects {
+  height: 350px;
+}
+
+.homeProjectsLink {
+  height: 240px;
+  position: absolute;
+
+  width: 100%;
+  left: 0;
+  overflow: hidden;
+  display: inline-block;
+  font-size: 4rem;
+}
+
+.homeProjectsTitleText {
+  display: flex;
+  width: 100%;
+  white-space: nowrap;
+  align-items: center;
+  vertical-align: baseline;
+}
+
+.breakSection {
+  width: 100%;
+  height: 580px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.breakSection > h2 {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.breakSection > p {
+  width: 800px;
+  font-size: 2rem;
+  color: #aaaaaa;
+}
+
+.aboutMeSection {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 7rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.aboutMeSection > img {
+  padding: 1rem;
+  border: 3px solid var(--primary-text-color);
+}
+
+.aboutMeTag > h2 {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.aboutMeTag {
+  width: 440px;
+}
+
+.aboutMeTag > p {
+  font-size: 1.18rem;
+  color: #aaaaaa;
+}
+
+.aboutMeTag > p > a {
+  display: block;
+  color: var(--primary-text-color);
+}
+
+.aboutMeSectionText {
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contactSection {
+  width: 100%;
+  margin-top: 24rem;
+  height: 600px;
+}
+
+.contactLabel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6rem;
+}
+
+.contactLabel > h2 {
+  font-size: 1.18rem;
+  font-weight: 400;
+  color: #aaaaaa;
+  text-align: center;
+  width: 600px;
+}
+
+.internalLinkContact {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  left: 0;
+  width: 100%;
+  position: absolute;
+}
+
+.contactMeBtn {
+}
+
+.internalContact {
+  font-size: 8rem;
+  font-weight: 500;
+  font-family: "Oswald", sans-serif;
+  white-space: nowrap;
+  transform: translateX(-100px);
+  display: inline-block;
+}
+
+.continousScroll:hover > .internalLinkContact > span {
+  color: #c0441a;
+}
+
+.continousScroll {
+  margin-bottom: 2rem;
+  height: 190px;
+}
+
+.mailContainer {
+  width: 100%;
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.mailContainer > a {
+  font-size: 2.2249875rem;
+  color: #aaaaaa;
+  font-weight: 500;
+}
+
+footer {
+  margin-top: 4rem;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footerLinks {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.footerLinkItem {
+  border: 1px solid #aaaaaa;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  border-radius: 15px;
+  height: 30px;
+}
+
+.footerLinkItem > p {
+  z-index: 1;
+  color: #aaaaaa;
+  transition: all 0.2s ease-in-out;
+}
+
+.footerLinkBackdrop {
+  background-color: #c0441a;
+  width: 20%;
+  opacity: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  border-radius: 15px;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.footerLinkItem:hover .footerLinkBackdrop {
+  width: 100%;
+  opacity: 1;
+}
+
+.footerLinkItem:hover > p {
+  color: #ffff;
+}
+
+.colorChange {
+  color: #aaaaaa;
+  font-weight: 800;
+}
+
+@media (min-width: 1592px) {
+  .showcase .heroTitleFirst > span,
+  .showcase .heroTitleSecond > span {
+    font-size: 21rem;
+    font-weight: 500;
+    display: block;
+  }
+
+  .heroTextTop {
+    overflow: hidden;
+    height: 700px;
+  }
+
+  .bottomLeftDesktop {
+    transform: translateY(-80px);
+  }
+
+  .aboutText {
+    width: 330px;
+    margin-top: 2rem;
+    font-size: 1.06rem;
+    color: #aaaaaa;
+  }
+
+  .rotateSphere {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+  }
+
+  .bottomLeftDesktop > span {
+    font-size: 17rem;
+    font-weight: 500;
+    display: block;
+  }
+
+  .homeProjectsLink {
+    height: 340px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    overflow: hidden;
+    display: inline-block;
+    font-size: 5rem;
+  }
+
+  .homeProjects {
+    height: 370px;
+  }
+
+  .internalContact {
+    font-size: 9rem;
+    font-weight: 500;
+    font-family: "Oswald", sans-serif;
+    white-space: nowrap;
+    transform: translateX(-100px);
+    display: inline-block;
+  }
+
+  .continousScroll {
+    margin-bottom: 3.5rem;
+    height: 190px;
+  }
+
+  .aboutMeSection {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 7rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .aboutMeSection > img {
+    padding: 1rem;
+    width: 500px;
+    border: 3px solid var(--primary-text-color);
+  }
+}
+
+@media (min-width: 1696px) {
+  .showcase .heroTitleFirst > span,
+  .showcase .heroTitleSecond > span {
+    font-size: 23rem;
+    font-weight: 500;
+    display: block;
+  }
+
+  .heroTextTop {
+    overflow: hidden;
+    height: 700px;
+  }
+
+  .bottomLeftDesktop {
+    transform: translateY(-60px);
+  }
+
+  .aboutText {
+    width: 430px;
+    margin-top: 4rem;
+    font-size: 1.06rem;
+    color: #aaaaaa;
+  }
+
+  .bottomLeftDesktop > span {
+    font-size: 20rem;
+    font-weight: 500;
+    display: block;
+  }
+
+  .aboutMeSection {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 7rem;
+    padding-left: 14rem;
+    padding-right: 14rem;
+  }
+
+  .heroTitleBottom {
+    display: flex;
+    justify-content: space-between;
+    height: 360px;
+  }
+
+  .projectSection {
+    width: 100%;
+    margin-top: 6rem;
+  }
+}
+
+@media (max-width: 1496px) {
+  .showcase .heroTitleFirst > span,
+  .showcase .heroTitleSecond > span {
+    font-size: 18rem;
+    font-weight: 500;
+    display: block;
+  }
+
+  .heroTextTop {
+    overflow: hidden;
+    height: 400px;
+  }
+
+  .bottomLeftDesktop {
+    transform: translateY(-90px);
+  }
+
+  .aboutText {
+    width: 330px;
+    margin-top: 0rem;
+    font-size: 1.06rem;
+    color: #aaaaaa;
+  }
+
+  .bottomLeftDesktop > span {
+    font-size: 15rem;
+    font-weight: 500;
+    display: block;
+  }
+}
+
+@media (max-width: 1408px) {
+  .aboutText {
+    width: 370px;
+    margin-top: 0rem;
+    font-size: 1rem;
+    color: #aaaaaa;
+  }
+
+  .showcase .heroTitleFirst > span,
+  .showcase .heroTitleSecond > span {
+    font-size: 17rem;
+    font-weight: 500;
+    display: block;
+  }
+}
+
+@media (max-width: 1388px) {
+  .aboutText {
+    width: 320px;
+    margin-top: 0rem;
+    font-size: 1rem;
+    color: #aaaaaa;
+  }
+}
+
+@media (max-width: 1344px) {
+  .aboutText {
+    width: 320px;
+    margin-top: 0rem;
+    font-size: 0.9rem;
+    color: #aaaaaa;
+  }
+
+  .bottomLeftDesktop > span {
+    font-size: 14rem;
+    font-weight: 500;
+    display: block;
+  }
+
+  .showcase .heroTitleFirst > span,
+  .showcase .heroTitleSecond > span {
+    font-size: 16rem;
+    font-weight: 500;
+    display: block;
+  }
+
+  .heroTextTop {
+    overflow: hidden;
+    height: 350px;
+  }
+
+  .showcase {
+    width: 100%;
+    height: 760px;
+    font-family: "Oswald", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: -10rem;
+    position: relative;
+  }
+}
+
+@media (max-width: 1268px) {
+  .aboutText {
+    width: 300px;
+    margin-top: 0rem;
+    font-size: 0.9rem;
+    color: #aaaaaa;
+  }
+
+  .bottomLeftDesktop > span {
+    font-size: 13rem;
+    font-weight: 500;
+    display: block;
+  }
+
+  .showcase .heroTitleFirst > span,
+  .showcase .heroTitleSecond > span {
+    font-size: 15rem;
+    font-weight: 500;
+    display: block;
+  }
+
+  .heroTextTop {
+    overflow: hidden;
+    height: 350px;
+  }
+
+  .showcase {
+    width: 100%;
+    height: 760px;
+    font-family: "Oswald", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: -10rem;
+    position: relative;
+  }
+
+  .aboutMeSection {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 7rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+}
+
+@media (max-width: 1172px) {
+  .aboutText {
+    width: 300px;
+    margin-top: 0rem;
+    font-size: 0.9rem;
+    color: #aaaaaa;
+    transform: translateY(-90px);
+  }
+
+  .heroTitleBottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly !important;
+    height: 360px;
+  }
+
+  .bottomLeftDesktop > span {
+    font-size: 13rem;
+    font-weight: 500;
+    display: block;
+  }
+
+  .showcase .heroTitleFirst > span,
+  .showcase .heroTitleSecond > span {
+    font-size: 13.5rem;
+    font-weight: 500;
+    display: block;
+  }
+
+  .heroTextTop {
+    overflow: hidden;
+    height: 350px;
+  }
+
+  .showcase {
+    width: 100%;
+    height: 760px;
+    font-family: "Oswald", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: -10rem;
+    position: relative;
+  }
+}
+
+@media (max-width: 1052px) {
+  .aboutText {
+    width: 400px;
+    margin-top: 0rem;
+    font-size: 0.9rem;
+    color: #aaaaaa;
+    transform: translateY(-90px);
+  }
+
+  .heroTitleBottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly !important;
+    height: 360px;
+  }
+
+  .bottomLeftDesktop > span {
+    font-size: 11rem;
+    font-weight: 500;
+    display: block;
+  }
+
+  .showcase .heroTitleFirst > span,
+  .showcase .heroTitleSecond > span {
+    font-size: 12rem;
+    font-weight: 500;
+    display: block;
+  }
+
+  .heroTextTop {
+    overflow: hidden;
+    height: 310px;
+  }
+
+  .showcase {
+    width: 100%;
+    height: 760px;
+    font-family: "Oswald", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: -10rem;
+    position: relative;
+  }
+}
+
+@media (max-width: 984px) {
+  .aboutMeSection {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 7rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  .aboutMeSection > img {
+    padding: 1rem;
+    width: 400px;
+    border: 3px solid var(--primary-text-color);
+  }
+
+  .aboutMeTag {
+    width: 340px;
+  }
+}
+
+@media (max-width: 860px) {
+  .aboutMeSection {
+    width: 100%;
+    height: 1100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 7rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  .aboutMeSection > img {
+    padding: 1rem;
+    width: 400px;
+    border: 3px solid var(--primary-text-color);
+  }
+
+  .aboutMeTag {
+    width: 340px;
+    margin-top: 4rem;
+  }
+
+  footer {
+    margin-top: 4rem;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 828px) {
+  .aboutMeSection {
+    width: 100%;
+    height: 1100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 7rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  .aboutMeSection > img {
+    padding: 1rem;
+    width: 400px;
+    border: 3px solid var(--primary-text-color);
+  }
+
+  .bottomLeftDesktop > span {
+    font-size: 9rem;
+    font-weight: 500;
+    display: block;
+  }
+
+  .showcase .heroTitleFirst > span,
+  .showcase .heroTitleSecond > span {
+    font-size: 10rem;
+    font-weight: 500;
+    display: block;
+  }
+
+  .heroTextTop {
+    overflow: hidden;
+    height: 240px;
+  }
+
+  .breakSection > p {
+    width: 600px;
+    font-size: 1.8rem;
+    color: #aaaaaa;
+  }
+
+  .aboutMeTag {
+    width: 340px;
+    margin-top: 4rem;
+  }
+
+  footer {
+    margin-top: 4rem;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .bottomLeftDesktop,
+  .showcase .heroTitleFirst,
+  .showcase .heroTitleSecond {
+    display: flex;
+    letter-spacing: -10px;
+    word-break: break-all;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutMeSection {
+    width: 100%;
+    height: 1100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 7rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  .displayText {
+    display: none !important;
+  }
+
+  .displayMobile {
+    display: block !important;
+  }
+
+  .heroTitleMobile {
+    font-size: 9rem;
+  }
+
+  .heroBottomTitleMobile {
+    font-size: 9rem;
+    display: flex;
+    align-items: center;
+    transform: translateY(-60px);
+  }
+
+  .heroTitleGapMobile {
+    display: block;
+    height: 20px;
+
+    width: 200px;
+    background-color: var(--primary-text-color);
+    cursor: text;
+  }
+
+  .aboutMeSection > img {
+    padding: 1rem;
+    width: 400px;
+    border: 3px solid var(--primary-text-color);
+  }
+
+  .bottomLeftDesktop > span {
+    font-size: 9rem;
+    font-weight: 500;
+    display: block;
+  }
+
+  .showcase .heroTitleFirst > span,
+  .showcase .heroTitleSecond > span {
+    font-size: 10rem;
+    font-weight: 500;
+    display: block;
+  }
+
+  .heroTextTop {
+    overflow: hidden;
+    height: 240px;
+  }
+
+  .bottomLeftDesktop {
+    transform: translateY(-120px);
+  }
+
+  .aboutMeTag {
+    width: 340px;
+    margin-top: 4rem;
+  }
+
+  footer {
+    margin-top: 4rem;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .rotateSphere {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+  }
+
+  .bottomLeftDesktop,
+  .showcase .heroTitleFirst,
+  .showcase .heroTitleSecond {
+    display: flex;
+    letter-spacing: -10px;
+    word-break: break-all;
+  }
+}
+
+@media (max-width: 636px) {
+  .breakSection > p {
+    width: 100%;
+    font-size: 1.3rem;
+    color: #aaaaaa;
+  }
+
+  .contactLabel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6rem;
+  }
+
+  .contactLabel > h2 {
+    font-size: 1.18rem;
+    font-weight: 400;
+    color: #aaaaaa;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 616px) {
+  .breakSection > p {
+    width: 100%;
+    font-size: 1.3rem;
+    color: #aaaaaa;
+  }
+
+  .showcase {
+    width: 100%;
+    height: 760px;
+    font-family: "Oswald", sans-serif;
+    display: flex;
+
+    margin-top: 4rem;
+    flex-direction: column;
+    gap: -10rem;
+    position: relative;
+  }
+
+  .heroTitleMobile {
+    font-size: 8rem;
+  }
+
+  .heroBottomTitleMobile {
+    font-size: 8rem;
+    display: flex;
+    align-items: center;
+    transform: translateY(-60px);
+  }
+
+  .heroTitleGapMobile {
+    display: block;
+    height: 20px;
+    width: 140px;
+    background-color: var(--primary-text-color);
+    cursor: text;
+  }
+
+  .bottomLeftDesktop > span {
+    font-size: 8rem;
+    font-weight: 500;
+    display: block;
+  }
+
+  .homeProjectsTitleText {
+    display: flex;
+    width: 100%;
+    white-space: no-wrap;
+    align-items: center;
+    vertical-align: baseline;
+  }
+
+  .homeProjectsLink {
+    height: 240px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    overflow: hidden;
+    display: inline-block;
+    font-size: 3rem;
+  }
+
+  .homeProjects {
+    height: 270px;
+  }
+}
+
+@media (max-width: 540px) {
+  .breakSection > p {
+    width: 100%;
+    font-size: 1.3rem;
+    color: #aaaaaa;
+  }
+
+  .internalContact {
+    font-size: 5rem;
+    font-weight: 500;
+    font-family: "Oswald", sans-serif;
+    white-space: nowrap;
+    transform: translateX(-100px);
+    display: inline-block;
+  }
+
+  .continousScroll {
+    margin-bottom: 3.5rem;
+    height: 80px;
+  }
+
+  .showcase {
+    width: 100%;
+    height: 760px;
+    font-family: "Oswald", sans-serif;
+    display: flex;
+
+    margin-top: 4rem;
+    flex-direction: column;
+    gap: -10rem;
+    position: relative;
+  }
+
+  .heroTitleMobile {
+    font-size: 6rem;
+  }
+
+  .heroBottomTitleMobile {
+    font-size: 6rem;
+    display: flex;
+    align-items: center;
+    transform: translateY(-20px);
+  }
+
+  .heroTitleGapMobile {
+    display: block;
+    height: 20px;
+    width: 140px;
+    background-color: var(--primary-text-color);
+    cursor: text;
+  }
+
+  .bottomLeftDesktop > span {
+    font-size: 6rem;
+    font-weight: 800;
+    display: block;
+  }
+
+  .bottomLeftDesktop {
+    transform: translateY(-90px);
+  }
+
+  .homeProjectsTitleText {
+    display: flex;
+    width: 100%;
+    white-space: no-wrap;
+    align-items: center;
+    vertical-align: baseline;
+  }
+
+  .homeProjectsLink {
+    height: 240px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    overflow: hidden;
+    display: inline-block;
+    font-size: 3rem;
+  }
+
+  .bottomLeftDesktop,
+  .showcase .heroTitleFirst,
+  .showcase .heroTitleSecond {
+    display: flex;
+    letter-spacing: 1px;
+    word-break: break-all;
+  }
+
+  .homeProjects {
+    height: 270px;
+  }
+
+  .aboutText {
+    width: 300px;
+    margin-top: 0rem;
+    font-size: 0.9rem;
+    color: #aaaaaa;
+    transform: translateY(-90px);
+  }
+}
+
+@media (max-width: 508px) {
+  .heroTitleMobile {
+    font-size: 5rem;
+  }
+
+  .heroBottomTitleMobile {
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    transform: translateY(-20px);
+  }
+
+  .heroTitleGapMobile {
+    display: block;
+    height: 10px;
+    width: 100px;
+    background-color: var(--primary-text-color);
+    cursor: text;
+  }
+
+  .bottomLeftDesktop > span {
+    font-size: 5rem;
+    font-weight: 800;
+    display: block;
+  }
+
+  .bottomLeftDesktop {
+    transform: translateY(-90px);
+  }
+}
+
+@media (max-width: 452px) {
+  .heroTitleMobile {
+    font-size: 4rem;
+  }
+
+  .heroBottomTitleMobile {
+    font-size: 4rem;
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    transform: translateY(-20px);
+  }
+
+  .heroTitleGapMobile {
+    display: block;
+    height: 10px;
+    width: 100px;
+    background-color: var(--primary-text-color);
+    cursor: text;
+  }
+
+  .bottomLeftDesktop > span {
+    font-size: 4rem;
+    font-weight: 800;
+    display: block;
+  }
+
+  .showcase {
+    width: 100%;
+    height: 540px;
+    font-family: "Oswald", sans-serif;
+    display: flex;
+
+    margin-top: 4rem;
+    flex-direction: column;
+    gap: -10rem;
+    position: relative;
+  }
+
+  .bottomLeftDesktop {
+    transform: translateY(-90px);
+  }
+}
+
+@media (max-width: 464px) {
+  .mailContainer > a {
+    font-size: 1.4rem;
+    color: #aaaaaa;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 440px) {
+  .projectLabel {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.9rem;
+  }
+
+  .navbar {
+    margin-top: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+
+    align-items: start;
+    justify-content: space-between;
+  }
+
+  .ResumeMeBtn {
+    border: 1px solid #aaaaaa;
+    padding: 0.1rem;
+    margin-top: 1rem;
+    display: block;
+    border-radius: 10px;
+  }
+
+  .aboutMeSection > img {
+    padding: 1rem;
+    width: 100%;
+    border: 3px solid var(--primary-text-color);
+  }
+
+  .projectLabel > div {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    font-size: 0.85rem;
+    font-weight: 600;
+    gap: 1rem;
+    width: 70%;
+    justify-content: space-between;
+  }
+}

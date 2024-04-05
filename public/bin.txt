@@ -1,0 +1,149 @@
+import NavHeader from "./components/navigation.jsx";
+import ShowcaseSection from "./components/showcase.jsx";
+import ProjectSection from "./components/projects.jsx";
+import AboutMeSection from "./components/aboutMe.jsx";
+import FooterContentItem from "./components/footerContent.jsx";
+
+function App() {
+  return (
+    <div className="body-contain">
+      <NavHeader />
+      <ShowcaseSection />
+      <ProjectSection />
+      <AboutMeSection />
+      <FooterContentItem />
+    </div>
+  );
+}
+
+export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import React, { useEffect, useRef } from "react";
+import LocomotiveScroll from "locomotive-scroll";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+
+import NavHeader from "./components/navigation.jsx";
+import ShowcaseSection from "./components/showcase.jsx";
+import ProjectSection from "./components/projects.jsx";
+import AboutMeSection from "./components/aboutMe.jsx";
+import FooterContentItem from "./components/footerContent.jsx";
+
+function App() {
+  const scrollRef = useRef(null);
+
+  useEffect(() => {
+    // Initialize Locomotive Scroll
+    const scroll = new LocomotiveScroll({
+      el: scrollRef.current,
+      smooth: true,
+      lerp: 0.1,
+      tablet: {
+        breakpoint: 768,
+      },
+    });
+
+    // Initialize GSAP ScrollTrigger
+    gsap.registerPlugin(ScrollTrigger);
+    ScrollTrigger.scrollerProxy(scroll.scroll);
+
+    return () => {
+      scroll.destroy();
+    };
+  }, []);
+
+  // Register GSAP animations with ScrollTrigger for each component
+  useEffect(() => {
+    const showcaseAnimation = () => {
+      gsap.to(".showcase .rotateSphere", {
+        scrollTrigger: {
+          trigger: ".showcase",
+          start: "top center",
+          end: "bottom center",
+          scrub: true,
+          scroller: scrollRef.current,
+        },
+        opacity: 0,
+        y: 10,
+      });
+    };
+
+    const projectAnimation = () => {
+      gsap.to(".projectSection .homeProjectsLink", {
+        scrollTrigger: {
+          trigger: ".projectSection",
+          start: "top center",
+          end: "bottom center",
+          scrub: true,
+          scroller: scrollRef.current,
+        },
+        opacity: 0,
+        y: 10,
+      });
+    };
+
+    const aboutMeAnimation = () => {
+      gsap.to(".aboutMeSection .aboutMeSectionText", {
+        scrollTrigger: {
+          trigger: ".aboutMeSection",
+          start: "top center",
+          end: "bottom center",
+          scrub: true,
+          scroller: scrollRef.current,
+        },
+        opacity: 0,
+        y: 10,
+      });
+    };
+
+    const footerAnimation = () => {
+      gsap.to(".contactSection", {
+        scrollTrigger: {
+          trigger: ".contactSection",
+          start: "top center",
+          end: "bottom center",
+          scrub: true,
+          scroller: scrollRef.current,
+        },
+        opacity: 0,
+        y: 10,
+      });
+    };
+
+    // Call each animation function
+    showcaseAnimation();
+    projectAnimation();
+    aboutMeAnimation();
+    footerAnimation();
+  }, []);
+
+  return (
+    <div className="body-contain" data-scroll-container ref={scrollRef}>
+      <NavHeader />
+      <ShowcaseSection />
+      <ProjectSection />
+      <AboutMeSection />
+      <FooterContentItem />
+    </div>
+  );
+}
+
+export default App;
+
