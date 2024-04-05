@@ -1339,6 +1339,30 @@ footer {
     padding-top: 1.9rem;
   }
 
+  body {
+    cursor: default !important;
+  }
+
+  .custom-cursor {
+    position: fixed;
+    pointer-events: default;
+    z-index: 9999;
+    display: none;
+  }
+
+  .cursor-dot {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%; /* Creates a circle */
+    transform: translate(-50%, -50%);
+  }
+
+  .cursor-dot.green {
+    background-color: #00ff15;
+    cursor: none !important;
+  }
+
   .navbar {
     margin-top: 1.3rem;
     display: flex;
@@ -1361,6 +1385,11 @@ footer {
     padding: 1rem;
     width: 100%;
     border: 3px solid var(--primary-text-color);
+  }
+
+  .navbar > p > img {
+    width: 20px;
+    height: 20px;
   }
 
   .projectLabel > div {
