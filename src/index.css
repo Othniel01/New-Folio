@@ -4,13 +4,48 @@
   box-sizing: border-box;
 }
 
+.custom-cursor {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.navbar > p {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar > p > img {
+  width: 30px;
+  height: 30px;
+}
+
+.cursor-dot {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%; /* Creates a circle */
+  transform: translate(-50%, -50%);
+}
+
+.cursor-dot.green {
+  background-color: #00ff15;
+  cursor: none !important;
+}
+
 a {
   text-decoration: none;
   color: var(--primary-text-color);
+  cursor: none !important;
 }
 ::selection {
   background-color: #c0441a;
   color: #ffffff;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .ResumeMeBtn {
@@ -30,6 +65,7 @@ body {
   color: var(--primary-text-color);
   overflow-x: hidden !important;
   width: 100%;
+  cursor: none !important;
 }
 .scroll-container {
   height: 100vh;
@@ -116,7 +152,7 @@ body {
   height: 35px;
   width: 300px;
   background-color: var(--primary-text-color);
-  cursor: text;
+  cursor: none !important;
 }
 
 .hero-gap:hover {
@@ -174,9 +210,11 @@ body {
 .rotateSphere {
   width: 180px;
   height: 180px;
+  z-index: 1;
   position: absolute;
   bottom: 50px;
   right: 0;
+  pointer-events: none;
 }
 
 .projectSection {
@@ -311,7 +349,7 @@ body {
 
 .contactSection {
   width: 100%;
-  margin-top: 24rem;
+  padding-top: 24rem;
   height: 600px;
 }
 
