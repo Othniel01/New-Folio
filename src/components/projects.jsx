@@ -133,7 +133,7 @@ export default function ProjectSection() {
       <div className="homeProjects">
         <div className="projectLabel">
           <div>
-            <p>VYSHUN</p>
+            <p>NCC</p>
             <p>
               ART DIRECTION /<br />
               WEB DEVELOPMENT
