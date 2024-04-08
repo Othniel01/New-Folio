@@ -98,56 +98,7 @@ export default function ProjectSection() {
         </a>
       </div>
       <div className="straightLine"></div>
-      <div className="homeProjects">
-        <div className="projectLabel">
-          <div>
-            <p>MAJTAX ERP SYSTEM</p>
-            <p>
-              ART DIRECTION /<br />
-              WEB DEVELOPMENT
-            </p>
-          </div>
-        </div>
-        <a href="" className="homeProjectsLink">
-          <h1
-            className="homeProjectsLinkTitle left"
-            data-id="2"
-            style={{
-              transform: "translateX(122.573px)",
-            }}
-          >
-            <span className="homeProjectsTitleText">
-              MAJTAX - ERP ORGANISATION SYSTEM
-            </span>
-          </h1>
-        </a>
-      </div>
-      <div className="straightLine"></div>
-      <div className="homeProjects">
-        <div className="projectLabel">
-          <div>
-            <p>VYSHUN</p>
-            <p>
-              ART DIRECTION /<br />
-              WEB DEVELOPMENT
-            </p>
-          </div>
-        </div>
-        <a href="www.vyshun.com" className="homeProjectsLink">
-          <h1
-            className="homeProjectsLinkTitle right"
-            data-id="3"
-            style={{
-              transform: "translateX(-530.368px)",
-            }}
-          >
-            <span className="homeProjectsTitleText">
-              VYSHUN - SOFTWARE DEVELOPMENT COMPANY
-            </span>
-          </h1>
-        </a>
-      </div>
-      <div className="straightLine"></div>
+      {/* /// */}
       <div className="homeProjects">
         <div className="projectLabel">
           <div>
@@ -172,6 +123,61 @@ export default function ProjectSection() {
           >
             <span className="homeProjectsTitleText">
               PERMISO - IDENTITY THREAT DETECTION AND RESPONSE
+            </span>
+          </h1>
+        </a>
+      </div>
+      {/* //// */}
+
+      <div className="straightLine"></div>
+      <div className="homeProjects">
+        <div className="projectLabel">
+          <div>
+            <p>VYSHUN</p>
+            <p>
+              ART DIRECTION /<br />
+              WEB DEVELOPMENT
+            </p>
+          </div>
+        </div>
+        <a
+          href="https://eservices.ncc.gov.ng/home-page/dashboard"
+          className="homeProjectsLink"
+        >
+          <h1
+            className="homeProjectsLinkTitle right"
+            data-id="3"
+            style={{
+              transform: "translateX(-530.368px)",
+            }}
+          >
+            <span className="homeProjectsTitleText">
+              NCC SERVICES - NIGERIAN COMMUNICATION SERVICES
+            </span>
+          </h1>
+        </a>
+      </div>
+      <div className="straightLine"></div>
+      <div className="homeProjects">
+        <div className="projectLabel">
+          <div>
+            <p>MAJTAX ERP SYSTEM</p>
+            <p>
+              ART DIRECTION /<br />
+              WEB DEVELOPMENT
+            </p>
+          </div>
+        </div>
+        <a href="" className="homeProjectsLink">
+          <h1
+            className="homeProjectsLinkTitle left"
+            data-id="2"
+            style={{
+              transform: "translateX(122.573px)",
+            }}
+          >
+            <span className="homeProjectsTitleText">
+              MAJTAX - ERP ORGANISATION SYSTEM
             </span>
           </h1>
         </a>
