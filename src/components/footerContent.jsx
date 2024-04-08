@@ -93,7 +93,7 @@ export default function FooterContentItem() {
 
         <p>
           <span className="colorChange">Inspired by &nbsp;</span>
-          OluwadareSeyi
+          SAPA
         </p>
       </footer>
     </div>

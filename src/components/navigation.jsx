@@ -12,6 +12,7 @@ export default function NavHeader() {
       <TimeBlinker></TimeBlinker>
       <div className="pageLinks">
         <a
+          target="_blank"
           className="ResumeMeBtn"
           href="https://drive.google.com/file/d/12YaWxWAXeVJOE8JzPSr_eAC05_e9auvm/view?usp=sharing"
         >

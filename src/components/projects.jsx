@@ -163,8 +163,8 @@ export default function ProjectSection() {
           <div>
             <p>MAJTAX ERP SYSTEM</p>
             <p>
-              ART DIRECTION /<br />
-              WEB DEVELOPMENT
+              NDA PROTECTED /<br />
+              CONTACT FOR DESIGNS
             </p>
           </div>
         </div>
@@ -177,7 +177,7 @@ export default function ProjectSection() {
             }}
           >
             <span className="homeProjectsTitleText">
-              MAJTAX - ERP ORGANISATION SYSTEM
+              MAJTAX - INTERNAL ERP ORGANISATION SYSTEM
             </span>
           </h1>
         </a>
