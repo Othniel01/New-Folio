@@ -141,6 +141,7 @@ export default function ProjectSection() {
           </div>
         </div>
         <a
+          target="_blank"
           href="https://eservices.ncc.gov.ng/home-page/dashboard"
           className="homeProjectsLink"
         >
