@@ -23,7 +23,7 @@ export default function AboutMeSection() {
           <h2>MORE GIST</h2>
           <p>
             I listen to EDM and Afro music all the time, you can see what I'm
-            currently listening to on this Site. And listen to my playlists.
+            currently listening to. And listen to my playlists.
             <a href="mailto:othnielabalaka@gmail.com" target="_blank">
               GET IN TOUCH
             </a>
