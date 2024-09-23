@@ -133,7 +133,7 @@ export default function ProjectSection() {
       <div className="homeProjects">
         <div className="projectLabel">
           <div>
-            <p>NCC</p>
+            <p>Vyshun</p>
             <p>
               ART DIRECTION /<br />
               WEB DEVELOPMENT
@@ -142,7 +142,7 @@ export default function ProjectSection() {
         </div>
         <a
           target="_blank"
-          href="https://ncc.gov.ng/"
+          href="https://www.cleanui.dev/"
           className="homeProjectsLink"
         >
           <h1
@@ -153,7 +153,7 @@ export default function ProjectSection() {
             }}
           >
             <span className="homeProjectsTitleText">
-              NCC SERVICES - NIGERIAN COMMUNICATION SERVICES
+              Clean UI - SOFTWARE DEVELOPMENT COMPANY
             </span>
           </h1>
         </a>
