@@ -74,7 +74,7 @@ export default function ProjectSection() {
           <div>
             <p>Linkbry</p>
             <p>
-              Backend /<br />
+              BACKEND /<br />
             </p>
           </div>
         </div>
@@ -91,7 +91,7 @@ export default function ProjectSection() {
             }}
           >
             <span className="homeProjectsTitleText">
-              Linkbry - Personal Link Management Software
+              LINKBRY - PERSONAL LINK MANAGEMENT SOFTWARE
             </span>
           </h1>
         </a>
