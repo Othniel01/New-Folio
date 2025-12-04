@@ -72,15 +72,14 @@ export default function ProjectSection() {
       <div className="homeProjects">
         <div className="projectLabel">
           <div>
-            <p>FLEXPORT</p>
+            <p>Linkbry</p>
             <p>
-              ART DIRECTION /<br />
-              WEB DEVELOPMENT
+              Backend /<br />
             </p>
           </div>
         </div>
         <a
-          href="http://flexport.org/"
+          href="https://linkbry.vercel.app/"
           target="_blank"
           className="homeProjectsLink"
         >
@@ -92,7 +91,7 @@ export default function ProjectSection() {
             }}
           >
             <span className="homeProjectsTitleText">
-              FLEXPORT - HUMANITARIAN RELIEF LOGISTICS
+              Linkbry - Personal Link Management Software
             </span>
           </h1>
         </a>
@@ -104,8 +103,7 @@ export default function ProjectSection() {
           <div>
             <p>PERMISO.IO</p>
             <p>
-              ART DIRECTION /<br />
-              WEB DEVELOPMENT
+              WORKED ON ART DIRECTION /<br />
             </p>
           </div>
         </div>
