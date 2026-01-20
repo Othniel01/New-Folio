@@ -9,12 +9,12 @@ export default function ProjectSection() {
 
     if (projectSectionElement) {
       const projectLinks = projectSectionElement.querySelectorAll(
-        ".homeProjectsLinkTitle"
+        ".homeProjectsLinkTitle",
       );
 
       projectLinks.forEach((link) => {
         const originalTranslateX = parseFloat(
-          link.style.transform.match(/-?\d*\.?\d+/)[0]
+          link.style.transform.match(/-?\d*\.?\d+/)[0],
         );
         setInitialTranslateX((prevTranslateX) => ({
           ...prevTranslateX,
@@ -31,7 +31,7 @@ export default function ProjectSection() {
 
       if (projectSectionElement) {
         const projectLinks = projectSectionElement.querySelectorAll(
-          ".homeProjectsLinkTitle"
+          ".homeProjectsLinkTitle",
         );
 
         projectLinks.forEach((link) => {
@@ -79,7 +79,7 @@ export default function ProjectSection() {
           </div>
         </div>
         <a
-          href="https://linkbry.vercel.app/"
+          href="https://app.linkbry.com/"
           target="_blank"
           className="homeProjectsLink"
         >
@@ -131,7 +131,7 @@ export default function ProjectSection() {
       <div className="homeProjects">
         <div className="projectLabel">
           <div>
-            <p>Vyshun</p>
+            <p>CleanUi</p>
             <p>
               ART DIRECTION /<br />
               WEB DEVELOPMENT
@@ -160,14 +160,14 @@ export default function ProjectSection() {
       <div className="homeProjects">
         <div className="projectLabel">
           <div>
-            <p>MAJTAX ERP SYSTEM</p>
+            <p>Typeonme</p>
             <p>
-              NDA PROTECTED /<br />
-              CONTACT FOR DESIGNS
+              ART DIRECTION /<br />
+              WEB DEVELOPMENT
             </p>
           </div>
         </div>
-        <a href="" className="homeProjectsLink">
+        <a href="https://typeonme.vercel.app/" className="homeProjectsLink">
           <h1
             className="homeProjectsLinkTitle left"
             data-id="2"
@@ -176,7 +176,7 @@ export default function ProjectSection() {
             }}
           >
             <span className="homeProjectsTitleText">
-              MAJTAX - INTERNAL ERP ORGANISATION SYSTEM
+              TYPEONME - POWERFUL OFFLINE TEXT EDITOR
             </span>
           </h1>
         </a>
