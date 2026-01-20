@@ -23,14 +23,12 @@ export default function ShowcaseSection() {
 
         // Apply inline styles for sliding effects
         if (showcaseElement.querySelector(".heroTitleFirst")) {
-          showcaseElement.querySelector(
-            ".heroTitleFirst"
-          ).style.transform = `translateX(${translateXFirst})`;
+          showcaseElement.querySelector(".heroTitleFirst").style.transform =
+            `translateX(${translateXFirst})`;
         }
         if (showcaseElement.querySelector(".heroTitleSecond")) {
-          showcaseElement.querySelector(
-            ".heroTitleSecond"
-          ).style.transform = `translateX(${translateXSecond})`;
+          showcaseElement.querySelector(".heroTitleSecond").style.transform =
+            `translateX(${translateXSecond})`;
         }
 
         // Calculate the scale value for hero-gap
@@ -38,9 +36,8 @@ export default function ShowcaseSection() {
 
         // Apply inline styles for stretching effect
         if (showcaseElement.querySelector(".hero-gap")) {
-          showcaseElement.querySelector(
-            ".hero-gap"
-          ).style.transform = `scale(${scaleValue})`;
+          showcaseElement.querySelector(".hero-gap").style.transform =
+            `scale(${scaleValue})`;
         }
 
         // Calculate the rotation angle for rotateSphere
@@ -48,9 +45,8 @@ export default function ShowcaseSection() {
 
         // Apply inline styles for rotation effect
         if (showcaseElement.querySelector(".rotateSphere")) {
-          showcaseElement.querySelector(
-            ".rotateSphere"
-          ).style.transform = `rotate(${rotationAngle}deg)`;
+          showcaseElement.querySelector(".rotateSphere").style.transform =
+            `rotate(${rotationAngle}deg)`;
         }
       }
     };
@@ -121,6 +117,7 @@ export default function ShowcaseSection() {
       </span>
 
       <object
+        aria-label="rotatesphere"
         className="rotateSphere"
         type="image/svg+xml"
         data={mySvg}

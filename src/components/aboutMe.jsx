@@ -13,6 +13,7 @@ export default function AboutMeSection() {
             Webflow, Web3, Robotics, Artificial Intelligence.
             <a
               href="https://www.linkedin.com/in/othniel-abalaka-885b50243"
+              rel="noreferrer"
               target="_blank"
             >
               SEE MY LINKEDIN
@@ -24,7 +25,11 @@ export default function AboutMeSection() {
           <p>
             I listen to EDM and Afro music all the time, you can see what I'm
             currently listening to. And listen to my playlists.
-            <a href="mailto:othnielabalaka@gmail.com" target="_blank">
+            <a
+              href="mailto:othnielabalaka@gmail.com"
+              rel="noreferrer"
+              target="_blank"
+            >
               GET IN TOUCH
             </a>
           </p>

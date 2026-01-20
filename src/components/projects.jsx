@@ -81,6 +81,7 @@ export default function ProjectSection() {
         <a
           href="https://app.linkbry.com/"
           target="_blank"
+          rel="noreferrer"
           className="homeProjectsLink"
         >
           <h1
@@ -110,6 +111,7 @@ export default function ProjectSection() {
         <a
           href="http://permiso.io/"
           target="_blank"
+          rel="noreferrer"
           className="homeProjectsLink"
         >
           <h1
@@ -141,6 +143,7 @@ export default function ProjectSection() {
         <a
           target="_blank"
           href="https://www.cleanui.dev/"
+          rel="noreferrer"
           className="homeProjectsLink"
         >
           <h1
@@ -203,6 +206,7 @@ export default function ProjectSection() {
         <a
           href="https://github.com/akshitagupta15june/PetMe"
           target="_blank"
+          rel="noreferrer"
           className="homeProjectsLink"
         >
           <h1
@@ -232,6 +236,7 @@ export default function ProjectSection() {
         <a
           href="https://github.com/Othniel01/ColorCatch-Extension"
           target="_blank"
+          rel="noreferrer"
           className="homeProjectsLink"
         >
           <h1

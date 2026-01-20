@@ -12,13 +12,6 @@ export default function FooterContentItem() {
       const childElements =
         continuousScrollElement.querySelectorAll(".internalContact");
 
-      // Calculate the width of the container and the child elements
-      const containerWidth = continuousScrollElement.offsetWidth;
-      let totalChildWidth = 0;
-      childElements.forEach((childElement) => {
-        totalChildWidth += childElement.offsetWidth;
-      });
-
       // Define the animation
       anime({
         targets: childElements,
@@ -43,6 +36,7 @@ export default function FooterContentItem() {
         <a
           href="mailto:othnielabalaka@gmail.com"
           target="_blank"
+          rel="noreferrer"
           className="internalLinkContact"
         >
           <span className="internalContact">
@@ -57,7 +51,11 @@ export default function FooterContentItem() {
       </div>
       <div className="straightLine"></div>
       <div className="mailContainer">
-        <a href="mailto:othnielabalaka@gmail.com" target="_blank">
+        <a
+          href="mailto:othnielabalaka@gmail.com"
+          rel="noreferrer"
+          target="_blank"
+        >
           othnielabalaka@gmail.com
         </a>
       </div>
@@ -68,6 +66,7 @@ export default function FooterContentItem() {
           <a
             href="https://twitter.com/AtOthnielcodes?t=8hbozszIgAAfJ3Ckcc3NGQ&s=09"
             target="_blank"
+            rel="noreferrer"
             className="footerLinkItem"
           >
             <div className="footerLinkBackdrop"></div>
@@ -76,6 +75,7 @@ export default function FooterContentItem() {
           <a
             href="https://www.linkedin.com/in/othniel-abalaka-885b50243"
             target="_blank"
+            rel="noreferrer"
             className="footerLinkItem"
           >
             <div className="footerLinkBackdrop"></div>
@@ -84,6 +84,7 @@ export default function FooterContentItem() {
           <a
             href="https://github.com/Othniel01"
             target="_blank"
+            rel="noreferrer"
             className="footerLinkItem"
           >
             <div className="footerLinkBackdrop"></div>

@@ -10,11 +10,10 @@ import CustomCursor from "./components/cursor.jsx";
 
 function App() {
   const scrollContainerRef = useRef(null);
-  let locomotiveScroll = null;
 
   useEffect(() => {
     console.log("Initializing locomotive-scroll...");
-    locomotiveScroll = new LocomotiveScroll({
+    const locomotiveScroll = new LocomotiveScroll({
       el: scrollContainerRef.current,
       smooth: true,
       smoothMobile: true,

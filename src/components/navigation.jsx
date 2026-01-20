@@ -13,6 +13,7 @@ export default function NavHeader() {
       <div className="pageLinks">
         <a
           target="_blank"
+          rel="noreferrer"
           className="ResumeMeBtn"
           href="https://drive.google.com/file/d/13MDBeyL9wOLW6Q8BJfNaEM__GHdIECh1/view?usp=sharing"
         >
