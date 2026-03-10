@@ -15,7 +15,7 @@ export default function NavHeader() {
           target="_blank"
           rel="noreferrer"
           className="ResumeMeBtn"
-          href="https://drive.google.com/file/d/1hLP-NjAIYfWiDKXkMYGOEaPDfpuUhmqu/view?usp=sharing"
+          href="https://drive.google.com/file/d/1eyVikldhsZGjzsbmMasAV-LWQtUyR0Ds/view?usp=sharing"
         >
           Resume
         </a>

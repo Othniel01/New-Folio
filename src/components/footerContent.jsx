@@ -12,11 +12,11 @@ export default function FooterContentItem() {
       const childElements =
         continuousScrollElement.querySelectorAll(".internalContact");
 
-      // Define the animation
+      
       anime({
         targets: childElements,
         translateX: "-100%",
-        duration: 12000, // Adjust the duration as needed
+        duration: 12000, 
         easing: "linear",
         loop: true,
       });

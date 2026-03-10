@@ -72,9 +72,37 @@ export default function ProjectSection() {
       <div className="homeProjects">
         <div className="projectLabel">
           <div>
-            <p>Linkbry</p>
+            <p>CORN WESTAFRICA</p>
             <p>
-              BACKEND /<br />
+              FULLSTACK /<br />
+            </p>
+          </div>
+        </div>
+        <a
+          href="https://www.cornwestafrica.org/"
+          target="_blank"
+          rel="noreferrer"
+          className="homeProjectsLink"
+        >
+          <h1
+            className="homeProjectsLinkTitle left"
+            data-id="1"
+            style={{
+              transform: "translateX(-411.375px)",
+            }}
+          >
+            <span className="homeProjectsTitleText">
+              CORN WESTAFRICA - EMPOWERING PEACE BUILDING INITIATIVES
+            </span>
+          </h1>
+        </a>
+      </div>
+      <div className="homeProjects">
+        <div className="projectLabel">
+          <div>
+            <p>LINKBRY</p>
+            <p>
+              FULL STACK /<br />
             </p>
           </div>
         </div>
@@ -133,7 +161,7 @@ export default function ProjectSection() {
       <div className="homeProjects">
         <div className="projectLabel">
           <div>
-            <p>CleanUi</p>
+            <p>CLEANUI</p>
             <p>
               ART DIRECTION /<br />
               WEB DEVELOPMENT
@@ -163,14 +191,19 @@ export default function ProjectSection() {
       <div className="homeProjects">
         <div className="projectLabel">
           <div>
-            <p>Typeonme</p>
+            <p>TYPEONME</p>
             <p>
               ART DIRECTION /<br />
               WEB DEVELOPMENT
             </p>
           </div>
         </div>
-        <a href="https://typeonme.vercel.app/" className="homeProjectsLink">
+        <a
+          target="_blank"
+          href="https://typeonme.vercel.app/"
+          className="homeProjectsLink"
+          rel="noreferrer"
+        >
           <h1
             className="homeProjectsLinkTitle left"
             data-id="2"
@@ -193,6 +226,7 @@ export default function ProjectSection() {
         </p>
       </div>
       <div className="straightLine"></div>
+
       <div className="homeProjects">
         <div className="projectLabel">
           <div>
@@ -222,6 +256,7 @@ export default function ProjectSection() {
           </h1>
         </a>
       </div>
+
       <div className="straightLine"></div>
       <div className="homeProjects">
         <div className="projectLabel">
@@ -248,6 +283,36 @@ export default function ProjectSection() {
           >
             <span className="homeProjectsTitleText">
               COLOR CATCH - BROWSER WEB EXTENSION FOR DESIGNERS
+            </span>
+          </h1>
+        </a>
+      </div>
+      <div className="straightLine"></div>
+      <div className="homeProjects">
+        <div className="projectLabel">
+          <div>
+            <p>FREECODECAMP</p>
+            <p>
+              BUG FIX/
+              <br />
+            </p>
+          </div>
+        </div>
+        <a
+          href="https://github.com/freeCodeCamp/freeCodeCamp/pull/56570"
+          target="_blank"
+          rel="noreferrer"
+          className="homeProjectsLink"
+        >
+          <h1
+            className="homeProjectsLinkTitle right"
+            data-id="8"
+            style={{
+              transform: "translateX(-516.181px)",
+            }}
+          >
+            <span className="homeProjectsTitleText">
+              FREECODECAMP - SCRIPT DISPLAY BUG
             </span>
           </h1>
         </a>

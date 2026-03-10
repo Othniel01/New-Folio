@@ -106,12 +106,14 @@ export default function ShowcaseSection() {
           <p>
             <span className="firstWord">ABOUT</span>
             &nbsp; I am a developer based in Abuja, Nigeria focused on creating
-            interactive digital experiences on the web, working with brands and
-            industry leaders such as &nbsp;
-            <span>NCC,&nbsp;</span>
-            <span>MAJTAX,&nbsp;</span>
-            <span>VYSHUN,&nbsp;</span> and <span>UPWORK</span>
-            &nbsp; amongst others to achieve.
+            powerful experiences on the web, working with brands and industry
+            leaders such as&nbsp;
+            <span>Data2bots,&nbsp;</span>
+            <span>Permiso,&nbsp;</span>
+            <span>Bravinic,&nbsp;</span>
+            <span>CORN West Africa,&nbsp;</span>
+            <span>Odoo,&nbsp;</span> and <span>YOU</span>
+            &nbsp;amongst others to achieve.
           </p>
         </div>
       </span>
